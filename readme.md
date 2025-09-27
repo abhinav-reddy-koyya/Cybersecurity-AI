@@ -1,22 +1,23 @@
-🔐 AI in Cybersecurity – Intrusion Detection System (UNSW-NB15)
-📘 Project Summary
+AI in Cybersecurity – Intrusion Detection System (UNSW-NB15)
+
+Project Summary
 
 This project demonstrates how Artificial Intelligence (AI) can be applied to Cybersecurity by building an Intrusion Detection System (IDS).
 Using the UNSW-NB15 dataset, the system learns to differentiate between normal network traffic and various types of cyberattacks (e.g., DoS, Exploits, Fuzzers).
 
 The project includes a Streamlit dashboard that makes the AI model interactive and visual:
 
-📂 Load and preview training/testing datasets
+Load and preview training/testing datasets
 
-🧠 Train an ML model (Random Forest Classifier by default)
+Train an ML model (Random Forest Classifier by default)
 
-📊 Evaluate with confusion matrix, ROC curve, and classification metrics
+Evaluate with confusion matrix, ROC curve, and classification metrics
 
-🚨 Flag and explore malicious records in test data
+Flag and explore malicious records in test data
 
 This acts as a mini Security Operations Center (SOC) dashboard powered by AI.
 
-⚡ Features
+Features
 
 Dataset Handling: Auto-loads UNSW-NB15 train/test splits or allows CSV uploads.
 
@@ -28,7 +29,7 @@ Attack Analysis: Flags malicious traffic records and visualizes attack distribut
 
 Interactive Dashboard: Built with Streamlit for real-time analysis.
 
-📂 Project Structure
+Project Structure
 cybersecurity-ai/
 │── app.py                     # Main Streamlit dashboard
 │── requirements.txt           # Dependencies
@@ -61,7 +62,7 @@ cybersecurity-ai/
     ├── roc_curve.png
     └── performance_report.txt
 
-📊 Dataset
+Dataset
 
 We use the UNSW-NB15 Intrusion Detection dataset, created by the University of New South Wales, which contains modern network attack types.
 
@@ -75,7 +76,7 @@ Target Label: label (0 = Normal, 1 = Attack)
 
 More info: UNSW-NB15 Dataset
 
-🛠️ Tech Stack
+Tech Stack
 
 Python 3.10+
 
@@ -85,7 +86,7 @@ ML Model: Random Forest Classifier (extensible to XGBoost, DL models)
 
 Visualization: Streamlit interactive dashboard
 
-⚙️ Installation & Setup
+Installation & Setup
 1. Clone the Repository
 cd cybersecurity-ai
 
@@ -103,7 +104,7 @@ UNSW_NB15_testing-set.csv
 4. Run the App
 streamlit run app.py
 
-📊 Example Outputs
+Example Outputs
 
 Classification Report: Accuracy, Precision, Recall, F1
 
@@ -113,7 +114,7 @@ ROC Curve: Area under curve (AUC) for model performance
 
 Flagged Malicious Records: Interactive view of predicted attacks
 
-🚀 Future Enhancements
+Future Enhancements
 
 Add KPI Metric Cards (Accuracy %, Precision %, Recall %) at the top.
 
@@ -125,7 +126,7 @@ Deploy to AWS/GCP/Azure for enterprise-ready IDS.
 
 Expand dashboard with attack-type breakdowns.
 
-👨‍💻 Author
+Author
 
 Abhinav Reddy Koyya
 M.S. in Computer Science, NYIT
